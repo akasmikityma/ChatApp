@@ -1,7 +1,10 @@
 import React from 'react'
-
-export default function Home() {
+import Applayout from '../components/layout/Applayout'
+const  Home=()=> {
+  console.log("thisi is home")
   return (
     <div>Home</div>
   )
 }
+
+export default Applayout()(Home);
