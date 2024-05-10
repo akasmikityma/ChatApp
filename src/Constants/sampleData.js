@@ -40,3 +40,38 @@ export const SampleNotifications = [
     _id: "2"
   }
 ];
+
+export const SampleMessageData=[
+  {
+    attachments:[
+      {
+        public_id:"asvf",
+        url:"vfvsdbgbgbgbsdfd",
+      },
+    ],
+    content:"this is an message",
+    _id:"vfdjsoidfjhiodhb",
+    sender:{
+      _id:"user._id",
+      name:"bishal"
+    },
+    chat:"chatId",
+    cretatdAT:"2024-05-10T07:12:16.148Z"
+  },
+  {
+    attachments:[
+      {
+        public_id:"asvf",
+        url:"vfvsdbgbgbgbsdfd",
+      },
+    ],
+    content:"this is an message",
+    _id:"vfdjsoidfjhiodhb",
+    sender:{
+      _id:"vfvsfv",
+      name:"bishal"
+    },
+    chat:"chatId",
+    cretatdAT:"2024-05-10T07:12:16.148Z"
+  }
+]
