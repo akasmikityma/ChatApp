@@ -1,6 +1,6 @@
 import { Avatar, AvatarGroup, Box, Stack } from '@mui/material';
 import React from 'react';
-
+import {transFormImage} from "../../lib/features.js"
 const AvatarCard = ({ avatar = [], max = 4 }) => {
   return (
     <div>
@@ -10,7 +10,7 @@ const AvatarCard = ({ avatar = [], max = 4 }) => {
             {avatar.map((url, index) => (
               <Avatar
                 key={index} // You can use index as the key, no need to use Math.random()
-                src={url}
+                src={transFormImage(url)}
                 alt={`Avatar ${index}`}
                 sx={{
                   width: '3rem',

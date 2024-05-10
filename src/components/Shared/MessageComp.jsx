@@ -1,13 +1,14 @@
 import { Box, Typography } from '@mui/material';
-
+import {fileFormat} from "../../lib/features.js";
 import React,{memo} from 'react'
+import RenderAttachMent from "./RenderAttachMent.jsx"
 import { lightblue } from '../../Constants/Color';
 import moment from 'moment';
 
 const MessageComp = ({message,user}) => {
     const {sender,content,attachments=[],cretatdAT}=message;
     const sameSender=sender?._id===user?._id
-
+    console.log(attachments)
     const timeAgo=moment(cretatdAT).fromNow()
   return (
     <div style={{
@@ -29,15 +30,16 @@ const MessageComp = ({message,user}) => {
             attachments.length>0 &&  (
                 attachments.map((atta,index)=>{
               const url=atta.url;
-              const file="ads";
-              return <Box>
-                 <a href=''
+              const file=fileFormat(url);
+              return <Box key={index}>
+                 <a 
+                 href={url}
                  target='_blank'
                  download
                  style={{
                     color:"black"
                  }}>
-
+            {RenderAttachMent(file,url)}
                  </a>
               </Box>
                 })

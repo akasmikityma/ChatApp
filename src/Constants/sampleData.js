@@ -46,7 +46,7 @@ export const SampleMessageData=[
     attachments:[
       {
         public_id:"asvf",
-        url:"vfvsdbgbgbgbsdfd",
+        url:"https://imgs.search.brave.com/H5Cgn_HXtLTxGz1FWS5LMUv0umWt8O7qF9YTgogfnuI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/YS50cmFuc2Zlcm1h/cmt0LnRlY2hub2xv/Z3kvcG9ydHJhaXQv/YmlnLzI4MDAzLTE3/MTAwODAzMzkuanBn/P2xtPTE",
       },
     ],
     content:"this is an message",
@@ -61,12 +61,12 @@ export const SampleMessageData=[
   {
     attachments:[
       {
-        public_id:"asvf",
-        url:"vfvsdbgbgbgbsdfd",
+        public_id:"dfgbfg",
+        url:"https://via.placeholder.com/150",
       },
     ],
     content:"this is an message",
-    _id:"vfdjsoidfjhiodhb",
+    _id:"vfdjsoidfjhiof6dhb",
     sender:{
       _id:"vfvsfv",
       name:"bishal"

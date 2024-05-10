@@ -31,7 +31,7 @@ const  Chat=()=> {
      >
     {
       SampleMessageData?.map((i)=>{
-        return <MessageComp message={i} user={user}/>
+        return <MessageComp key={i._id} message={i} user={user}/>
       })
     }
    </Stack>
