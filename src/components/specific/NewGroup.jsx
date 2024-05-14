@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import { Sampleusers } from "../../Constants/sampleData.js";
 import UserItem from '../Shared/UserItem.jsx';
 const NewGroup = () => {
+  const groupname=useInputValidation("")
   const [members, setmembers] = useState(Sampleusers)
   const [selectedMembers, setselectedMembers] = useState([])
-  const groupname=useInputValidation("")
   const selectMemberHandler=(id)=>{
    
     setmembers((prev)=>prev.map((user)=>user._id===id?{...user,isAdded:!user.isAdded}:user))
